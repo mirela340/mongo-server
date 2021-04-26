@@ -12,7 +12,7 @@ const create = (req, res) => {
 }
 
 const list = (req, res) => {
-    Student.find({}, (err, data) => {
+    Student.find((err, data) => {
         if (err) {
             return res.status(400).json(err.message);
         }

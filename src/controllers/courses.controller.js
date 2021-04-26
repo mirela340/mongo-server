@@ -12,13 +12,12 @@ const create = (req, res) => {
 }
 
 const list = (req, res) => {
-    const course = Course(req.body);
-    course.save((err, data) => {
+    Course.find((err, data) => {
         if (err) {
             return res.status(400).json(err.message);
         }
-        res.status(201).json(data);
-    })
+        res.status(200).json(data);
+    });
 }
 
 const read = (req, res) => {
