@@ -1,5 +1,5 @@
-# nodeServer
-My First NodeJS Server
+# mongo-server
+My First MongoJS Server
 
 ├── mongo-server
     ├── dist  
