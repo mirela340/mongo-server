@@ -1,17 +1,26 @@
 # nodeServer
 My First NodeJS Server
 
-├── node-server
-    ├── dist
-     └── main.js   
-├── node_modules
+├── mongo-server
+    ├── dist  
+    ├── node_modules
 ├── src
-    ├── .babelrc
-    ├── controller.js
+ ├── controllers
+    ├── courses.controller.js
+    ├── students.controller.js
+ ├── models
+    ├── course.model.js
+    ├── student.model.js
+ ├── router
+    ├── course.router.js
     ├── index.js
-    ├── middlewares.js
-    ├── router.js
-├── .gitignore
+    ├── student.router.js
+ ├── app.js
+ ├── config.js
+ ├── index.js
+
+├── .babelrc
+├── gitignore
 ├── nodemon.json
 ├── package-lock.json
 └── package.json
@@ -22,14 +31,16 @@ package.json
 
 In package.json are installed:
 
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "helmet": "^4.5.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.5"
+ 
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "helmet": "^4.5.0"
- 
     "nodemon": "^2.0.7",
     "webpack": "^5.34.0",
     "webpack-cli": "^4.6.0",
